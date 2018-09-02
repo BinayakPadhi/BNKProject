@@ -38,6 +38,7 @@ public class SignUpTest extends TestBase {
 			System.out.println("Title Matched");
 			signuppage.UserDetails();
 			System.out.println("User Details Entered Successfully");
+			System.out.println("Thank you!");
 			Thread.sleep(2000);
 		}
 		
