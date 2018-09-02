@@ -1,0 +1,52 @@
+Git Usages:
+
+Pre-requisite:
+
+1. Open an account in the GitHub Website and Sign-in to it
+2. Install Git in your System(Follow the steps of the link: https://www.atlassian.com/git/tutorials/install-git#windows?)
+
+Actions:
+
+Step 1: Open the Command Prompt and goto the Project Location "C:\Users\hp\workspace\FlightReservation(Hybrid)"
+Step 2: type git init -> for initialization of GIT for that Project
+Step 3: type dir -> to check for all the folders
+Step 4: type git remote add origin https://github.com/BinayakPadhi/HybridFramework.git -> for GIT connection, take this command from the GITHub site after creating the repository for your storage
+Step 5: type git status -> to know the status of all the files, Red color files are not yet pushed
+Step 6: type git add . -> to add all unpushed files to GIT repository
+
+NOTE: After this command, all the files will move to GIT Staging Area. To remove the files from the GIT Staging area, we can use the command > "git reset filename" and to Remove all the files from the GIT staging area, just use "> git reset"
+-> "git diff" command to check for the difference in code changes
+
+
+Step 7: type git status -> all red files should be in Green now that means those are ready for Commit
+Step 8: type git commit -m "Comment" -> to commit all the files and give a comment for reference
+
+IMPORTANT: Before committing any PUSH to the Git Repository, use PULL command "> git pull origin(Name of the Repository) master(is a Branch)"
+Step 9: type git push -u origin master -> to push your folder/Files from origin Branch to Master Branch
+Step 10: Give your GIT username and password
+
+
+How to Create a Branch:
+Note: We should NOT directly work with "Master Branch". We should have our own branch, so to create a Branch of our own to do Unit/Integration Testing, use the command: "$ git branch Branch-name"
+1. "$ git branch" is the command to check the current Branch you are working with and will name all of the branches of your repository
+2. To Switch to your own created branch, then command is :"$ git checkout Branch-name"
+3. To PUSH: "$git push -u origin binayak(Branch-name)"
+
+To Merge the new branch with Master branch:
+
+1. git checkout master -> git cursor now is now switched to Master Branch
+2. git pull origin master -> to check whether anyone else committed any code to Master branch or not. It should Return "Already Up-to-date" if someone does NOT
+3. git branch --merged -> to check the branch, we have merged so far
+4. to merge NOW: use command "$ git merge binayak"
+5. To merge the code into FINAL master branch use the same command: "$ git push origin master"
+6. Since the userdefined Branch is now merged with the Master Branch, we no longer need that branch("binayak" as of now) . Hence, use the command "$ git branch -d binayak" - to delete from local
+7. check first with the command: "$ git branch -a"- it should show the branch "binayak" and to delete the branch from Remote Repository use command: "$ git push origin --delete binayak"  -- branch will be deleted. 
+8. To confirm reissue the command: "git branch -a"
+
+
+
+
+
+
+
+
