@@ -19,7 +19,7 @@ public class LogInTest extends TestBase{
 		
 		/*Calling Constructor of TestBase Class to Initialize the properties file*/
 		super();
-		System.out.println("I am going to Cons");
+		//System.out.println("I am going to Cons");
 	}
 	@BeforeMethod
 	public void SetUp()
@@ -37,7 +37,8 @@ public class LogInTest extends TestBase{
 	public void validateLoginPageTitle()
 	{
 		String title = LoginPage.validateLoginPageTitle();
-		Assert.assertEquals(title, "Free CRM software in the cloud powers sales and customer service");
+		System.out.println("Actual Title is:" +title);
+		Assert.assertEquals(title, "#1 Free CRM software in the cloud for sales and service");
 		System.out.println("Title Matched");
 	}
 	
