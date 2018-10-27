@@ -6,6 +6,7 @@ Pre-requisite:
 2. Install Git in your System(Follow the steps of the link: https://www.atlassian.com/git/tutorials/install-git#windows?)
 
 Actions:
+Play With Git
 
 Step 1: Open the Command Prompt and goto the Project Location "C:\Users\hp\workspace\FlightReservation(Hybrid)"
 Step 2: type git init -> for initialization of GIT for that Project
